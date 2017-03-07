@@ -8,29 +8,37 @@
 
 using namespace std;
 
-void szyfruj(char tekst[], int klucz){
-    klucz = klucz % 26;
-    while (tekst[i] != '/0'){
-        if ((int)tekst[i] + klucz > 122)
-            tekst[i] = (char)(int)tekst[i] + klucz - 26;
-            else
-                ;
-        t++;
-    }
+void lower(char tekst[]){
+// funkcja zamienia du¿e litery na ma³e
+  // u¿yj pêtli do odczytywania kolejnych znaków
+  //sprawdŸ kod ASCII znaku
+  // je¿eli kod odpowiada du¿ej literze, podmieñ znak;
+
 }
+
+void szyfruj(char tekst[], int klucz) {
+    int i = 0;
+    klucz = klucz % 26;
+    while (tekst[i] != '\0') {
+        tekst[i] = (char)((int)tekst[i] + klucz);
+        //(int)tekst[i] - rzutowanie na kod ASCII
+        //(char)((int)tekst[i]) - zmiana kodu ASCII na znak
+        i++;
+    }
+    cout << tekst;
+}
+
 
 int main(int argc, char **argv)
 {
     char tekst[100];
     int klucz = 3;
-    cout << "Podaj tekst: " << endl;
+	cout << "Podaj tekst do zaszyfrowania: " << endl;
     cin >> tekst;
     cout << "Podaj klucz: ";
     cin >> klucz;
     szyfruj(tekst, klucz);
-    cout << tekst;
-
-
 	return 0;
 }
+
 
