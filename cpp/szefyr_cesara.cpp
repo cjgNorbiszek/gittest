@@ -9,10 +9,10 @@
 using namespace std;
 
 void lower(char tekst[]){
-// funkcja zamienia du¿e litery na ma³e
-  // u¿yj pêtli do odczytywania kolejnych znaków
-  //sprawdŸ kod ASCII znaku
-  // je¿eli kod odpowiada du¿ej literze, podmieñ znak;
+// funkcja zamienia duże litery na małe
+  // użyj pętli do odczytywania kolejnych znaków
+  //sprawdź kod ASCII znaku
+  // jeżeli kod odpowiada dużej literze, podmień znak;
 
 }
 
