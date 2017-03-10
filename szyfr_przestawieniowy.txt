@@ -1,0 +1,30 @@
+TOBEORNOTTOBETHATISTHEQUESTION
+
+klucz = 6
+
+TOBEOR
+NOTTOB
+ETHATI
+STHEQU
+ESTION
+
+Szyfrogram powstaje poprzez spisanie liter kolumnami:
+
+TNESEOOTTSBTHHT...
+
+Napisz program w dowolnym języku, który realizuje szyfrowanie przestawieniowe.
+
+1. pobierz tekst
+2. usuń białe znaki(spacje, tabulatory)
+	TOBEORNOTTOBETHATISTHEQUESTION
+3. pobierz klucz
+	klucz = 6
+4. podziel klucz na części długości klucza
+5. a) Zapisz części jedną pod drugą
+	TOBEOR
+NOTTOB
+ETHATI
+STHEQU
+ESTION
+5. b) W pętli odczytuj litery na kolejnych wielokrotności klucza
+6. Wydrukuj zaszyfrowany tekst
