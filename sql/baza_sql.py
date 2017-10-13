@@ -15,8 +15,9 @@ def main(args):
     with open('pracownicy_z1.sql','r') as plik:
         skrypt = plik.read()
         cur.executescript(skrypt)
-        premia = dane_z_pliku('premia.txt')
         
+        
+    premia = dane_z_pliku('premia.txt')
     premia = wyczysc_dane(premia, 1)
     
     dzial = dane_z_pliku('dział.txt')
