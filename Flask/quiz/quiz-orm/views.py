@@ -139,3 +139,8 @@ def usun(pid):
         p.delete_instance(recursive=True)
         return redirect(url_for('index'))
     return render_template("pytanie_usun.html", pytanie=p)
+
+@app.route('/todo', methods=['GET', 'POST'])
+def todo():
+    form = TodoForm()
+    return render('todo.html', form=form)
